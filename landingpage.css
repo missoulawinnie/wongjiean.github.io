@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    
+}
+body{
+    background: url(pics/sunbear/sunbear6.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-color: rgb(166, 212, 163);
+    height: 100%;
+}
+#logo img{
+    height:100px;
+    padding: 10px 20px;
+}
+/*nav*/
+nav{
+right: 0;
+height: 100vh;
+background-color: rgba(229, 225, 153, 0.7);
+padding-left: 40%;
+bottom: 0;
+position: fixed;
+animation: slide_up 1s linear;
+
+}
+@keyframes slide_up{
+    from{
+        top: 50%;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+nav ul{
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20vh;
+}
+nav ul li{
+list-style-type: none;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    line-height: 70px;
+    bottom: 0;
+}
+nav ul li a:hover{
+    color: #624217;
+    fill: white;
+}
+
+svg{
+    width: 30px;
+}
+
+/*main*/
+body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+main h1{
+    line-height: 80px;
+    font-size: 50px;
+}
+.firstletter{
+    color: white;
+    font-size:70px;
+}
+@media screen and (max-width:858px) {
+    body{
+        background-size: 200%;
+    }
+    nav{
+        padding-left: 20%;
+    }
+}
+

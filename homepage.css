@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background: url("pics/sunbear/sunbear1.jpg") no-repeat center;
+    background-color: rgba(169, 192, 103, 0.7);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*navagation bar*/
+nav{
+	height: 150px;
+	width: 100% ;
+    position: fixed;
+    background: inherit;
+}
+.navbar{
+    background: inherit;  
+}
+#logo img{
+    display: block;
+    height:80px;
+    margin: 5px auto 2px auto;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+nav ul li{
+    display: inline-block;
+	line-height: 40px;
+	font-size: 16pt;
+    margin: 2px auto;
+    font-weight: bold;
+}
+nav ul li a{
+	color: white;
+}
+nav ul li a:hover{
+	color: #E5E199;
+	transition: 0.3s;
+}
+nav hr{
+    width: 95%;
+    height: 2px;
+    background: white;
+    border: none;
+    margin: auto;
+}
+/*main content*/
+.content{
+    width: 95%;
+    margin: 0 auto;
+}
+/*aside*/
+aside{
+    display: block;
+    margin-top: 150px;
+    width: 25%;
+    float: left;    
+    border-radius: 8px;
+}
+aside h2{
+    text-align: center;
+    padding: 5px auto;
+    color: white;
+}
+.news{
+    display: block;
+    margin: 10px 5px;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    border: solid black;
+}
+aside div a h3{
+    text-align: center;
+    padding: 3px auto;
+}
+aside div a img{
+    display: block;
+    width: 85%;
+    margin: 5px auto;
+}
+aside div a p{
+    display: block;
+    width: 85%;
+    margin: 3px auto;
+}
+div aside div a{
+    color: #624217;
+}
+div aside div a:hover{
+    color: #BFA076;
+}
+/*main*/
+main{
+    margin-top: 150px;
+    margin-bottom: 30px;
+    width: 73%;
+    float: right;
+    border-radius: 8px; 
+}
+main h1{
+    text-align: center;
+    color: white;
+    
+}
+main article{
+    display: block;
+    height: 100%;
+}
+main article p{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+}
+.info{
+    margin: 10px;
+    padding-top: 5px;
+}
+
+main article h2{
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px auto;
+    clear: both;
+    color: white;
+}
+main article img{
+    display: inline-block;
+    width:33%;
+}
+main article p{
+    width: 50%;
+}
+#aboutus{
+    scroll-margin-top:128px;
+}
+#ourmission{
+    scroll-margin-top:-80px ;
+}
+#sunbears, #ourcentre{
+    scroll-margin-top:-50px ;
+}
+#mainpic1{
+    float: left;
+    margin: 10px 5px 10px 5%;
+}
+#mainpar1{
+    float: right;
+    margin: 10px 5% 10px 0px;
+}
+#mainpic2{
+    float: right;
+    margin: 10px 5% 10px 0px;
+}
+#mainpar2{
+    float: left;
+    margin: 10px 5px 10px 5%;
+}
+#mainpic3{
+    float: left;
+    margin: 10px 5px 10px 5%;
+}
+#mainpar3{
+    float: right;
+    margin: 10px 5% 10px 0px;
+}
+#mainpic4{
+    float: right;
+    margin: 10px 5% 10px 0px;
+}
+#mainpar4{
+    float: left;
+    margin: 10px 5px 10px 5%;
+}
+#mainpic5{
+    float: left;
+    margin: 10px 5px 10px 5%;
+}
+#mainpar5{
+    float: right;
+    margin: 10px 5% 10px 0px;
+}
+
+/*footer*/
+footer{
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    list-style-type: none;
+    height: auto;
+    margin: 10px 3%;
+}
+footer ul li{
+    padding: 3px;
+}
+footer ul li a{
+    color: #BFA076;
+
+}
+footer ul li a:hover{
+    color: #E5E199;
+}
+.catagory{
+    font-size: 20px;
+    color: white;
+}
+footer ul li svg{
+    width: 2.5em;
+    height: 2.5em;
+    fill: white;
+    
+}
+footer ul li svg:hover{
+    width: 3em;
+    height: 3em;
+    transition: 0.3s;
+}
+#facebook:hover{
+    fill: #3b5999;
+}
+#instagram:hover{
+    fill: #E1306C;
+}
+#twitter:hover{
+    fill: black;
+}
+#youtube:hover{
+    fill: #CD201F;
+  }
+#copyright{
+   text-align: center;
+   padding-bottom: 8px;
+   font-size: 14px;
+   color: white;
+}
+/*mobile phone layout*/
+@media screen and (max-width:858px) {
+    aside{
+        display: none;
+    }
+    main{
+        clear: both;
+        display: block;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    #mainpar1,#mainpar2, #mainpar3, #mainpar4, #mainpar5{
+		width: 90%;
+		margin: 30px auto;
+		float: none;
+	}
+	#mainpic1, #mainpic2, #mainpic3, #mainpic4,#mainpic5{
+		width: 80%;
+		float: none;
+		display: block;
+		margin: auto;
+	}
+
+}
