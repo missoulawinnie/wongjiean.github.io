@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background: url("pics/sunbear/sunbear1.jpg") no-repeat center;
+    background-color: rgba(169, 192, 103, 0.7);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*navagation bar*/
+nav{
+	height: 150px;
+	width: 100% ;
+    position: fixed;
+    background: inherit;
+}
+.navbar{
+    background: inherit;  
+}
+#logo img{
+    display: block;
+    height:80px;
+    margin: 5px auto 2px auto;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+nav ul li{
+    display: inline-block;
+	line-height: 40px;
+	font-size: 16pt;
+    margin: 2px auto;
+    font-weight: bold;
+}
+nav ul li a{
+	color: white;
+}
+nav ul li a:hover{
+	color: #E5E199;
+	transition: 0.3s;
+}
+nav hr{
+    width: 95%;
+    height: 2px;
+    background: white;
+    border: none;
+    margin: auto;
+}
+/*main content*/
+#wrap{
+    text-align: center;
+}
+main{
+    display: inline-block;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+main h1{
+    color: white;
+}
+main h2{
+    color: white;
+}
+main article{
+    line-height: 25px;
+    margin: 10px auto;
+    padding: 10px auto;
+    width: 90%;
+    
+}
+main article p{
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px; 
+    margin: 10px auto;
+    padding: 10px 30px;
+}
+main article ul{
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px; 
+    margin: 10px auto;
+    padding: 10px 30px;
+    list-style: none;
+}
+.points{
+    font-size: 20px;
+    padding-top: 5px;
+}
+#cost{
+    font-size: 18px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+main button{
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 5px 5px;
+    color: white;
+    background-color: #BFA076;
+    border-radius: 8px;
+    border: none;
+}
+main button:hover{
+    background-color: #624217;
+    color: #E5E199;
+    cursor: pointer;
+}
+/*Photo gallery*/
+.gallery {
+    column-count: 4; 
+    column-gap: 15px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px; 
+    padding: 10px;
+}
+
+.volunteer-pics {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    break-inside: avoid; /* Prevent item from breaking across columns */
+    border-radius: 8px;
+    overflow: hidden;
+}
+.volunteer-pics img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+/*footer*/
+footer{
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    list-style-type: none;
+    height: auto;
+    margin: 10px 3%;
+}
+footer ul li{
+    padding: 3px;
+}
+footer ul li a{
+    color: #BFA076;
+
+}
+footer ul li a:hover{
+    color: #E5E199;
+}
+.catagory{
+    font-size: 20px;
+    color: white;
+}
+footer ul li svg{
+    width: 2.5em;
+    height: 2.5em;
+    fill: white;
+    
+}
+footer ul li svg:hover{
+    width: 3em;
+    height: 3em;
+    transition: 0.3s;
+}
+#facebook:hover{
+    fill: #3b5999;
+}
+#instagram:hover{
+    fill: #E1306C;
+}
+#twitter:hover{
+    fill: black;
+}
+#youtube:hover{
+    fill: #CD201F;
+  }
+#copyright{
+   text-align: center;
+   padding-bottom: 8px;
+   font-size: 14px;
+   color: white;
+}
+/*mobile phone layout*/
+@media screen and (max-width:858px) {
+    .gallery {
+        column-count: 3; 
+    }
+}

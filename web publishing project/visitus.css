@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: url("pics/sunbear/sunbear1.jpg") no-repeat center;
+    background-color: rgba(169, 192, 103, 0.7);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*navagation bar*/
+nav{
+	height: 150px;
+	width: 100% ;
+    position: fixed;
+    background: inherit;
+}
+.navbar{
+    background: inherit;  
+}
+#logo img{
+    display: block;
+    height:80px;
+    margin: 5px auto 2px auto;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+nav ul li{
+    display: inline-block;
+	line-height: 40px;
+	font-size: 16pt;
+    margin: 2px auto;
+    font-weight: bold;
+}
+nav ul li a{
+	color: white;
+}
+nav ul li a:hover{
+	color: #E5E199;
+	transition: 0.3s;
+}
+nav hr{
+    width: 95%;
+    height: 2px;
+    background: white;
+    border: none;
+    margin: auto;
+}
+/*main content*/
+.content{
+    width: 95%;
+    padding-top: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px; 
+}
+
+#title{
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.info{
+    width: 90%;
+    margin: 0 auto;
+   
+}
+#googlemap{
+        width: 40%;
+        height: 200px;
+        display: block;
+        float: left;
+}
+
+#location ul{
+    width: 50%;
+    float: right;
+    list-style: none;
+}
+#location ul li{
+    font-size: 18px;
+    line-height: 28px;
+
+}
+#location ul li b{
+    font-size: 24px;
+}
+
+#admissionfees{
+    clear: both;
+    scroll-margin-top: 150px;
+}
+#admissiontitle{
+    text-align: center;
+    padding: 10px;
+}
+#pricetable{
+    margin: 0 auto;
+    border: 2px solid #624217; 
+    border-collapse: collapse;
+    background-color: white;
+    line-height: 30px;
+    text-align: left;
+    
+}
+#pricetable thead th{
+    border-bottom:  2px solid 624217;
+    background-color: #E9D0AF;
+    padding: 5px 10px;
+}
+.column1{
+    border-right: 2px solid 624217;
+    background-color: #E9D0AF;
+    padding: 3px 10px;
+}
+#pricetable tr td{
+    padding: 3px 10px;
+}
+#notice{
+    padding: 10px;
+}
+#notice ul{
+    line-height: 20px;
+}
+/*footer*/
+footer{
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    list-style-type: none;
+    height: auto;
+    margin: 10px 3%;
+}
+footer ul li{
+    padding: 3px;
+}
+footer ul li a{
+    color: #BFA076;
+
+}
+footer ul li a:hover{
+    color: #E5E199;
+}
+.catagory{
+    font-size: 20px;
+    color: white;
+}
+footer ul li svg{
+    width: 2.5em;
+    height: 2.5em;
+    fill: white;
+    
+}
+footer ul li svg:hover{
+    width: 3em;
+    height: 3em;
+    transition: 0.3s;
+}
+#facebook:hover{
+    fill: #3b5999;
+}
+#instagram:hover{
+    fill: #E1306C;
+}
+#twitter:hover{
+    fill: black;
+}
+#youtube:hover{
+    fill: #CD201F;
+  }
+#copyright{
+   text-align: center;
+   padding-bottom: 8px;
+   font-size: 14px;
+   color: white;
+}

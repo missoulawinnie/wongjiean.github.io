@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background: url("pics/sunbear/sunbear1.jpg") no-repeat center;
+    background-color: rgba(169, 192, 103, 0.7);
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*navagation bar*/
+nav{
+	height: 150px;
+	width: 100% ;
+    position: fixed;
+    background: inherit;
+}
+.navbar{
+    background: inherit;  
+}
+#logo img{
+    display: block;
+    height:80px;
+    margin: 5px auto 2px auto;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+nav ul li{
+    display: inline-block;
+	line-height: 40px;
+	font-size: 16pt;
+    margin: 2px auto;
+    font-weight: bold;
+}
+nav ul li a{
+	color: white;
+}
+nav ul li a:hover{
+	color: #E5E199;
+	transition: 0.3s;
+}
+nav hr{
+    width: 95%;
+    height: 2px;
+    background: white;
+    border: none;
+    margin: auto;
+}
+/*main content*/
+#wrap{
+    text-align: center;
+}
+main{
+    display: inline-block;
+    margin: 0 auto;
+    width: 95%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+#title{
+    text-align: center;
+    color: white;
+}
+h2{
+    padding-bottom: 15px;
+}
+main aside{
+    float: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 45%;
+    border-radius: 8px; 
+    margin: 10px;
+    padding: 10px;
+    border: solid black;
+}
+main aside p{
+    text-align: left;
+    margin: 10px auto;
+}
+main aside ul{
+    text-align: left;
+    list-style-type: disc;
+    list-style-position: inside;
+    margin: 10px auto;
+}
+main img{
+    margin: 0 auto;
+    width: 80%;
+}
+
+main form{
+	width: 45%;
+    float: right;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px; 
+    margin: 10px;
+    padding: 10px;
+    border: solid black;
+}
+main form .input_field{
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+    padding-right: 10px;
+}
+main form .input_field label{
+	width: 90%;
+	font-size: 16px;
+    text-align: right;
+    padding-right: 10px;
+}
+main form .input_field .input{
+	width: 100%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 3px;
+}
+main form .input_field .select{
+    width: 105%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 6px 8px;
+	border-radius: 3px;
+}
+
+main form .submit{
+	width: 40%;
+	padding: 8px 10px;
+	font-size: 15px;
+	border: 0;
+	background: #624217 ;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	margin: auto;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+main form .submit:hover{
+	background:#BFA076;
+    color: #E5E199;
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    clear: both;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+footer ul{
+    list-style-type: none;
+    height: auto;
+    margin: 10px 3%;
+}
+footer ul li{
+    padding: 3px;
+}
+footer ul li a{
+    color: #BFA076;
+
+}
+footer ul li a:hover{
+    color: #E5E199;
+}
+.catagory{
+    font-size: 20px;
+    color: white;
+}
+footer ul li svg{
+    width: 2.5em;
+    height: 2.5em;
+    fill: white;
+    
+}
+footer ul li svg:hover{
+    width: 3em;
+    height: 3em;
+    transition: 0.3s;
+}
+#facebook:hover{
+    fill: #3b5999;
+}
+#instagram:hover{
+    fill: #E1306C;
+}
+#twitter:hover{
+    fill: black;
+}
+#youtube:hover{
+    fill: #CD201F;
+  }
+#copyright{
+   text-align: center;
+   padding-bottom: 8px;
+   font-size: 14px;
+   color: white;
+}
+/*mobile phone layout*/
+@media screen and (max-width:858px) {
+    main aside, main form{
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
